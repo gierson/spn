@@ -1,0 +1,80 @@
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.faq { 
+  margin-top: 10px;
+  h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 20px;
+  }
+}
+
+.accordion {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: $shadow;
+}
+.accordion-item {
+  width: 100%;
+  color: black;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: white;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background: darken(white, 10%);
+    }
+    &::after {
+      content: "\e921";
+      font-family: "spn";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      font-size: 14px;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    line-height: 1.3em;
+    color: black;
+    background: white;
+    transition: all .35s;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.8em;
+    background: white;
+    cursor: pointer;
+    &:hover {
+      background: darken(white, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .accordion-item-label {
+    background: darken(white, 10%);
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .accordion-item-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}

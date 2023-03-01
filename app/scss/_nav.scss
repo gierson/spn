@@ -1,0 +1,121 @@
+.nav {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 22px 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.039), 0px 3.75px 11px rgba(0, 0, 0, 0.19);
+
+  .nav-desktop-group {
+    display: contents;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #5F6368;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+
+    i {
+      margin-bottom: 5px;
+      font-size: 31px;
+      color: #939393;
+      transition: .2s ease-in-out;
+
+    }
+
+    &.active {
+      color: $color-magenta;
+    }
+
+    &:active,
+    &:hover {
+      color: $color-magenta;
+
+      i {
+        color: $color-magenta;
+      }
+    }
+    
+  }
+
+  @include respond(medium) {
+    
+    display: block;
+    top: 0;
+    bottom: unset;
+    position: relative;
+    padding: 12px;
+    margin: 0;
+
+    ul {
+      max-width: $nav-container-max;
+      align-items: center;
+
+      li a {
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+      }
+    }
+
+    .nav-item-profile a {
+      width: 57px;
+      height: 56px;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.16);
+      border-radius: 28px;
+      display: flex;
+      padding-top: 7px;
+
+      i {
+        font-size: 22px;
+        color: black;
+      }
+    }
+
+    ul li:nth-child(2) {
+      margin-left: auto;
+    }
+    ul li:nth-last-child(2) {
+      margin-right: auto;
+    }
+
+    .nav-desktop-group {
+      display: block;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.16);
+      border-radius: 28px;
+      display: flex;
+      padding: 10px 0;
+
+      
+    }
+
+    .nav-item-desktop {
+      padding: 9px 60px;
+
+      &:not(:last-child) {
+        border-right: 1px solid #ECECEC;
+      }
+    }
+
+  }
+
+}
+
+.nav-item-logo img {
+   max-width: 40px;
+}

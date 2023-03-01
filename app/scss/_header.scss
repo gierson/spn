@@ -1,0 +1,42 @@
+header {
+  background: url('../img/background-mobile.svg') no-repeat top center;
+  background-size: 100%;
+  min-height: calc(100vw / 0.96);
+  margin-bottom: -27vw;
+
+  @include respond(small) {
+    background: url('../img/background.svg') no-repeat top center;
+    background-size: cover;
+    min-height: 750px;
+    margin-bottom: -340px;
+  }
+  @include respond(medium) {
+    margin-bottom: -435px;
+  }
+
+  @include respond(xx-large) {
+    background-size: 1920px;
+    min-height: 790px;
+    margin-bottom: -465px;
+  }
+}
+
+.header {
+  
+  &__kv {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__tadek {
+    flex-basis: 100%;
+    @include respond(medium) {
+      flex-basis: 69%;
+    }
+    @include respond(large) {
+      flex-basis: 61%;
+      }
+  }
+}

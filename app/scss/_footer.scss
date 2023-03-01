@@ -1,0 +1,80 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 20px 140px;
+
+  @include respond(medium) {
+    padding: 40px 20px 10px;
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(medium) {
+      flex-direction: row;
+      align-items: center;
+      max-width: $nav-container-max;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    max-width: 40px;
+    margin: 0 0 20px;
+    @include respond(medium) {
+      margin-right: 40px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    @include respond(medium) {
+      flex-direction: row;
+    }
+
+    li {
+      margin: 10px 20px;
+      max-width: 130px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 15px;
+
+      a:active,
+      a:hover {
+        color: $color-magenta;
+      }
+
+      a.active {
+        color: $color-magenta;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(medium) {
+      margin-left: auto;
+    }
+
+    li {
+      margin: 0 10px;
+    }
+  }
+
+  &__copyright {
+    max-width: $nav-container-max;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 14px;
+    @include respond(medium) {
+      text-align: right;
+    }
+  }
+}

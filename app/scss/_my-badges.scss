@@ -1,0 +1,23 @@
+.my-badges {
+  margin-top: 30px;
+  margin-bottom: 35px;
+
+  &__container {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__items {
+    max-width: 460px;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

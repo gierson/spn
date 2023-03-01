@@ -1,0 +1,19 @@
+.img-resp {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hidden-on-mobile {
+  display: none;
+  @include respond(medium) {
+    display: inherit;
+  }
+}
+
+.hidden-on-desktop {
+  display: inherit;
+  @include respond(medium) {
+    display: none;
+  }
+}

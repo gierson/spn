@@ -1,0 +1,58 @@
+.bonuses {
+
+  &__containter {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__result {
+    margin-left: 40px;
+    padding: 14px 8px 0px;
+    min-width: 100px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 800;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background: $color-magenta;
+    margin-left: calc(var(--card-h-padding)*-1);
+    margin-right: calc(var(--card-h-padding)*-1);
+    margin-bottom: -14px;
+    @include respond(small) {
+      margin-left: -23px;
+      margin-right: -23px;
+    }
+    
+    border-radius: 0 0 10px 10px;
+    padding: 38px 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+    color: white;
+
+    i {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+}

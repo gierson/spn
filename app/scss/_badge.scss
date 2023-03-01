@@ -1,0 +1,113 @@
+.badge-progress {
+  display:inline-grid;
+  margin:10px 0;
+}
+
+.badge {
+  --f: 0;
+  --w:5rem;
+  @include respond(small) {
+    --w:5.5rem;
+  }
+  --p: calc((100/var(--s)) * var(--f));
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:inline-grid;
+  margin:2px 0;
+  place-content:center;
+  font-weight:bold;
+  font-family:sans-serif;
+  position: relative;
+  
+  &--green {
+    --c: #7AC943;
+  }
+  &--blue {
+    --c: #3FA9F5;
+  }
+  &--purpule {
+    --c: #93278F;
+  }
+  &--pink {
+    --c: #ef5ba1;
+  }
+  &--orange {
+    --c: #FBB03B;
+  }
+
+  i {
+    color: var(--c);
+    font-size: calc(var(--w) / 1.454545);
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-progress--size-3 {
+    --s: 3;
+    &:before {
+      inset:0;
+      mask: url('../img/mask-3.svg');
+    }
+  }
+
+  &-progress--size-4 {
+    --s: 4;
+    &:before {
+      inset:0;
+      mask: url('../img/mask-4.svg');
+    }
+  }
+
+  &-progress--size-5 {
+    --s: 5;
+    &:before {
+      inset:0;
+      mask: url('../img/mask-5.svg');
+    }
+  }
+
+  &-progress--fill-0 {
+    --f:0;
+  }
+
+  &-progress--fill-1 {
+    --f:1;
+  }
+
+  &-progress--fill-2 {
+    --f:2;
+  }
+
+  &-progress--fill-3 {
+    --f:3;
+  }
+
+  &-progress--fill-4 {
+    --f:4;
+  }
+
+  &-progress--fill-5 {
+    --f:5;
+  }
+
+  &:before,
+  &:after {
+    content:"";
+    background-color: $color-gray;
+    position:absolute;
+  }
+
+  &::before {
+    background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0), $color-gray;
+  }
+
+  &-caption {
+    text-align: center;
+    margin-top: 5px;
+  }
+
+}

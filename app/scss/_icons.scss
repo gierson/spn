@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'spn';
+  src:  url('../fonts/spn-icons/spn.eot?u9xi5');
+  src:  url('../fonts/spn-icons/spn.eot?u9xi5#iefix') format('embedded-opentype'),
+    url('../fonts/spn-icons/spn.ttf?u9xi5') format('truetype'),
+    url('../fonts/spn-icons/spn.woff?u9xi5') format('woff'),
+    url('../fonts/spn-icons/spn.svg?u9xi5#spn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'spn' !important;
+  font-size: 3.781251181640994rem;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e920";
+}
+.icon-absolwent:before {
+  content: "\ea20";
+}
+.icon-akademik:before {
+  content: "\ea21";
+}
+.icon-aktywista:before {
+  content: "\ea22";
+}
+.icon-as:before {
+  content: "\ea23";
+}
+.icon-bomba:before {
+  content: "\e900";
+}
+.icon-bystrzak:before {
+  content: "\e901";
+}
+.icon-celny:before {
+  content: "\e902";
+}
+.icon-ciekawski:before {
+  content: "\e903";
+}
+.icon-diament:before {
+  content: "\e904";
+}
+.icon-doktor:before {
+  content: "\e905";
+}
+.icon-eksplorer:before {
+  content: "\e906";
+}
+.icon-gamer:before {
+  content: "\e907";
+}
+.icon-geniusz:before {
+  content: "\e908";
+}
+.icon-globtroter:before {
+  content: "\e909";
+}
+.icon-gracz:before {
+  content: "\e90a";
+}
+.icon-kasa-1:before {
+  content: "\e90b";
+}
+.icon-kasa-2:before {
+  content: "\e90c";
+}
+.icon-kasa-3:before {
+  content: "\e90d";
+}
+.icon-krol:before {
+  content: "\e90e";
+}
+.icon-laureat:before {
+  content: "\e90f";
+}
+.icon-medalista:before {
+  content: "\e910";
+}
+.icon-mysliciel:before {
+  content: "\e911";
+}
+.icon-naukowiec:before {
+  content: "\e912";
+}
+.icon-odkrywca:before {
+  content: "\e913";
+}
+.icon-oswiecony:before {
+  content: "\e914";
+}
+.icon-pierscionek:before {
+  content: "\e915";
+}
+.icon-pionier:before {
+  content: "\e916";
+}
+.icon-puzel:before {
+  content: "\e917";
+}
+.icon-quizer:before {
+  content: "\e918";
+}
+.icon-rebus:before {
+  content: "\e919";
+}
+.icon-robot:before {
+  content: "\e91a";
+}
+.icon-student:before {
+  content: "\e91b";
+}
+.icon-szczesciarz:before {
+  content: "\e91c";
+}
+.icon-wszechwiedzacy:before {
+  content: "\e91d";
+}
+.icon-zdobywca:before {
+  content: "\e91e";
+}
+.icon-zwyciezca:before {
+  content: "\e91f";
+}
+
+.icon-arrow-next:before {
+  content: "\e921";
+}
+
+.icon-odznaki:before {
+  content: "\e922";
+}
+.icon-profil:before {
+  content: "\e923";
+}
+.icon-przelew:before {
+  content: "\e924";
+}
+.icon-start:before {
+  content: "\e925";
+}
+.icon-zasady:before {
+  content: "\e926";
+}
+
+
+.icon-color {
+  &--green {
+    color: $color-green;
+  }
+  &--blue {
+    color:$color-blue;
+  }
+  &--purpule {
+    color: $color-purpule;
+  }
+  &--pink {
+    color: $color-pink;
+  }
+  &--orange {
+    color: $color-orange;
+  }
+  &--magenta {
+    color: $color-magenta;
+  }
+  &--yellow {
+    color: $color-yellow;
+  }
+  &--white {
+    color: white;
+  }
+}

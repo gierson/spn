@@ -1,0 +1,106 @@
+.bullets {
+  display: flex;
+  transition: background-color .3s;
+  margin: 20px 0;
+  
+}
+.bullet {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 4px;
+  
+  &__active {
+    background-color: $color-magenta;
+  }
+}
+
+.onboard {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.onboard {
+
+  &__item {
+
+  &__animation {
+    width: 300px;
+  }
+  
+  padding: 25px 5px 25px;
+  @include respond(medium) {
+    padding: 45px 45px 30px;
+  }
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+
+
+  .tadek {
+    margin: -5% auto 0;
+    width: calc(100vh/3);
+    max-width: 267px;
+    display: block;
+    transform: translateY(-350px);
+      animation: .3s slide-in-top .5s both;
+    // margin-bottom: auto;
+    @include respond(medium) {
+      height: auto;
+    }
+
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 24px;
+    line-height: 33px;
+    color: white;
+  }
+  }
+
+  &--1 {
+    background: url(../img/onboard-city-bg.svg) no-repeat center 230px;
+
+  }
+  
+  &--2 {
+    background: url(../img/onboard-cluds-bg.svg) repeat center 230px;
+  }
+
+  &--3 {
+    background: url(../img/onboard-city-light-bg.svg) no-repeat center 32%;
+  }
+
+
+}
+
+.clouds {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-350px);
+  animation: .3s slide-in-top .7s both;
+
+  img {
+    width: calc(100vh/2);
+
+    @include respond(medium) {
+      width: 100%;
+    }
+  }
+}
+
+
+@keyframes slide-in-top {
+  to {
+    transform: translateY(0px);
+  }
+}

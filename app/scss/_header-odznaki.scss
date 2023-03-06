@@ -1,0 +1,41 @@
+.header-odznaki {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 15px 90px;
+
+  background: url('../img/odznaki-bg-mobile.svg') no-repeat center center;
+  background-size: cover;
+
+  @include respond(small) {
+    background: url(../img/odznaki-bg.svg) no-repeat center center;
+    background-size: cover;
+  }
+
+  @include respond(medium) {
+    padding: 15px 15px 90px;
+  }
+
+  &__img-container {
+    display: flex;
+    flex-direction: column;
+
+    @include respond(medium) {
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  }
+
+
+  &__tadek {
+    margin-top: -10px;
+    max-width: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    @include respond(medium) {
+      max-width: 314px;
+      margin-left: -30px;
+    }
+  }
+}

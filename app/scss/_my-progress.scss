@@ -1,0 +1,56 @@
+.my-progress {
+  margin-top: 30px;
+  margin-bottom: 13px;
+
+  &__container {
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__items {
+    max-width: 460px;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  &__next-level {
+    display: flex;
+
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-left: 18px;
+      justify-content: space-between;
+      height: 105px;
+
+      h1 {
+        font-size: 28px;
+        font-weight: 800;
+      }
+      p {
+        line-height: 1.6em;
+      }
+      strong {
+        font-size: 20px;
+        font-weight: 800;
+      }
+    }
+
+    i {
+      font-size: 87px;
+    }
+
+  }
+}

@@ -7,5 +7,9 @@
   @include respond(small) {
     padding: 14px 23px;
   }
+
+  &--locked {
+    opacity: 0.3;
+  }
   
 }

@@ -1,0 +1,27 @@
+.col {
+  overflow: hidden;
+  padding: 0 13px;
+  margin: 0 -26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-2 {
+  padding: 13px 13px;
+  flex-basis: 100%;
+  @include respond(medium) {
+    flex-basis: 50%;
+  }
+  
+
+}
+
+.col-3 {
+  flex-basis: 33.3333%;
+}
+
+.col-4 {
+  flex-basis: 25%;
+}

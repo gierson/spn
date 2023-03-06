@@ -1,0 +1,112 @@
+.badges-categories {
+
+  margin-top: -58px;
+
+  &__list {
+    display: flex;
+    
+    overflow-x: scroll;
+    padding: 10px 15px;
+    margin: 0 -15px 0;
+
+    @include respond(medium) {
+      margin: 0;
+      justify-content: center;
+      padding: 10px 0;
+      overflow-x: inherit;
+    }
+  }
+  &__item {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--active {
+      font-weight: 700;
+    }
+
+    &.badges-categories__item--green {
+      .badges-categories__link {
+        color: $color-green;
+      }
+    }
+    &.badges-categories__item--blue {
+      .badges-categories__link {
+        color: $color-blue;
+      }
+    }
+    &.badges-categories__item--pink {
+      .badges-categories__link {
+        color: $color-pink;
+      }
+    }
+    &.badges-categories__item--purpule {
+      .badges-categories__link {
+        color: $color-purpule;
+      }
+    }
+    &.badges-categories__item--yellow {
+      .badges-categories__link {
+        color: $color-yellow;
+      }
+    }
+    
+    &--active,
+    &:hover {
+      &.badges-categories__item--green {
+        .badges-categories__link {
+          background: $color-green;
+          color: white;
+        }
+      }
+
+      &.badges-categories__item--blue {
+        .badges-categories__link {
+          background: #3FA9F5;
+          color: white;
+        }
+      }
+      &.badges-categories__item--pink {
+        .badges-categories__link {
+          background: $color-pink;
+          color: white;
+        }
+      }
+      &.badges-categories__item--purpule {
+        .badges-categories__link {
+          background: $color-purpule;
+          color: white;
+        }
+      }
+      &.badges-categories__item--yellow {
+        .badges-categories__link {
+          background: $color-yellow;
+          color: white;
+        }
+      }
+    }
+
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px;
+    margin-bottom: 18px;
+    
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+    transition: .2s ease-in-out;
+
+    i {
+      font-size: 62px;
+    }
+  }
+}
+
+// .badges-categories__item:hover.badges-categories__item--green .badges-categories__link{
+//   background: black;
+// }

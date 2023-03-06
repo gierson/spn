@@ -12,6 +12,7 @@
 @import "badge";
 @import "card";
 @import "popup";
+@import "columns";
 
 @import "nav";
 @import "header";
@@ -22,6 +23,9 @@
 @import "footer";
 
 @import "onboard";
+@import "header-odznaki";
+@import "badges-categories";
+@import "my-progress";
 
 body {
   font-family: "TeleNeo Office";
@@ -30,6 +34,8 @@ body {
 
 .wrap {
   padding-bottom: 60px;
+  overflow: hidden;
+
 }
 
 h1, h2, h3, h4, h5, h6 { font-weight: 700;}

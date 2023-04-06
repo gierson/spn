@@ -1,0 +1,160 @@
+.notyfikacje {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(143,208,255,1) 0%, rgba(143,208,255,1) 50%, rgba(63,169,245,1) 50%, rgba(63,169,245,1) 100%);
+
+  &--nie-udalo-sie {
+    background: rgba(143,208,255,1);
+  }
+
+  &__odznaka {
+    background: url(../img/notyfikacje-odznaka-bg.svg) no-repeat center center;
+    background-size: cover;
+    max-width: 222px;
+    max-height: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 222px;
+    width: 222px;
+    margin: 10px 0;
+
+    i {
+      font-size: 10rem;
+    }
+  }
+
+  &__kwota {
+    background: url(../img/notyfikacje-kwota-bg.svg) no-repeat center center;
+    background-size: cover;
+    max-width: 196px;
+    max-height: 196px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 196px;
+    width: 196px;
+    margin: 10px 0;
+
+    font-size: 85px;
+    color: #CC4A00;
+    font-weight: 800;
+  }
+
+  &__item {
+    background: url(../img/notyfikacje-odznaki-bg.svg) no-repeat center 30%;
+    background-size: contain;
+
+    &--tak-jest {
+      background: url(../img/notyfikacje-odznaki-2-bg.svg) no-repeat center 20%;
+      background-size: contain;
+
+    }
+
+    &--bardzo-dobrze {
+      background: url(../img/notyfikacja-bardzo-dobrze-bg.svg) no-repeat center center;
+      background-size: contain;
+      @include respond(small) {
+        background-size: cover;
+        background-position: center 10%;
+      }
+
+    }
+
+    &--nie-udalo-sie {
+      background: url(../img/notyfikacje-nie-udalo-sie-bg.svg) no-repeat center 20px;
+      background-size: 434px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        height: 30%;
+        bottom: 0;
+        width: 100%;
+        background: url(../img/notyfikacje-nie-udalo-sie-bottom-bg.svg) no-repeat center top;
+        background-size: cover;
+        z-index: -1;
+      }
+
+    }
+
+
+    &__animation {
+      width: 300px;
+    }
+
+
+    
+    padding: 25px 0 25px;
+    @include respond(medium) {
+      padding: 45px 45px 30px;
+    }
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    position: relative;
+    z-index: 6;
+
+    .tadek {
+      margin: 0 auto 0;
+      width: 100%;
+      max-width: 314px;
+      display: block;
+      transform: translateY(-350px);
+        animation: .3s slide-in-top .5s both;
+      // margin-bottom: auto;
+      @include respond(medium) {
+        height: auto;
+      }
+
+    }
+
+    .tadek-2 {
+      margin: 0 auto 0;
+      width: 100%;
+      max-width: 254px;
+      max-height: 45vh;
+      display: block;
+      transform: translateY(-350px);
+        animation: .3s slide-in-top .5s both;
+      // margin-bottom: auto;
+      @include respond(medium) {
+        height: auto;
+      }
+
+      &--nie-udalo-sie {
+        margin: 32vh auto 20px;
+        position: relative;
+        z-index: 5;
+      }
+
+    }
+
+    h3 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #170C35;
+    }
+
+    
+
+    &__paragraph-1 {
+      margin: 10px 0;
+      font-size: 16px;
+      line-height: 20px;
+      color: white;
+    }
+    &__paragraph-2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #170C35;
+    }
+  }
+  
+
+
+}

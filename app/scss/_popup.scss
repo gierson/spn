@@ -25,6 +25,8 @@
   transform-origin: 0 0;
   opacity: 0;
   animation: show-popup .2s ease-in-out .4s both;
+  overflow: hidden;
+
 
   @include respond(medium) {
     height: auto;
